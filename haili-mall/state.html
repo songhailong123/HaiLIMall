@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="keywords" content="" />  
+		<meta name="description" content="" />  
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />  
+		<meta name="format-detection" content="telephone=no" />  
+		<meta name="apple-mobile-web-app-capable" content="yes" />  
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">  
+		<meta name="author" content=""/>  
+		<title>订单信息</title>
+		<script type="text/javascript" src="js/rem.js" ></script>
+		<link rel="stylesheet" href="css/index.css" />
+		<link rel="stylesheet" href="css/reset.css" />
+		<script type="text/javascript" src="js/jquery-2.2.3.min.js" ></script>
+		<script type="text/javascript" src="js/swiper.min.js" ></script>
+		<link rel="stylesheet" href="css/swiper.min.css" />
+		<link rel="stylesheet" href="css/style.css" />
+		<script type="text/javascript" src="js/popups.js" ></script>
+		<script type="text/javascript" src="js/tabs.js" ></script>
+		<script type="text/javascript">
+		//用的jq插件popups做的对话框，给删除按钮添加删除功能
+			$(document).ready(function(){
+				$("[id=delete]").on('touchstart',function(e){
+	   			e.preventDefault();
+	   			var that=this;
+	   			jqalert({
+                    title:'提示',
+                    content:'确定要取消当前订单吗',
+                    yestext:'确定',
+                    notext:'取消',
+                })
+	   			$("#yes_btn").on('touchstart',function(){
+	   				e.preventDefault();
+	   				$(that).parent().parent("li").remove()
+	   			})
+				})
+        })
+		</script>
+		<script type="text/javascript">
+		//用的jq插件popups做的对话框，给删除按钮添加删除功能
+			$(document).ready(function(){
+				$("[id=confirm]").on('touchstart',function(e){
+	   			e.preventDefault();
+	   			var that=this;
+	   			jqalert({
+                    title:'提示',
+                    content:'是否确定收货吗',
+                    yestext:'确定',
+                    notext:'取消',
+                })
+	   			$("#yes_btn").on('touchstart',function(){
+	   				e.preventDefault();
+	   				$(that).parent().parent("li").remove()
+	   			})
+				})
+        })
+		</script>
+	</head>
+	<body>
+		<header class="s-search">
+			<div class="s-title">
+				<div class="s-back">
+					<a href="javascript:;"ontouchstart="javascript:history.back(-1)"><img src="img/left.png"/></a>
+				</div>
+				<div class="s-info">
+					<p>我的订单</p>
+				</div>
+				<div class="s-index">
+					<a href="index.html"><img src="img/主页.png"/></a>
+				</div>
+			</div>
+			<div class="search_m form-color">
+				<form action="" method="post" >
+					<input type="text"placeholder="输入商场名称"name="search_m" id="search_m"class="input-style"/>
+					<input type="image" name="search_mbutton" id="search_mbutton" src="img/search .png" />
+				</form>
+			</div>
+		</header>
+		<section>
+		<div class="tabs"> 
+			<a href="#" class="change">全部</a> 
+			<a href="#" >待付款</a> 
+			<a href="#">已完成</a> 
+			<a href="#">待收货</a>
+			<a href="#">评价</a>
+		</div>
+		<div id="tabs-container" class="swiper-container">
+		   	<div class="swiper-wrapper">
+		      	<div class="swiper-slide">
+		        	<div class="content-slide">
+		        		<ul class="news-list">
+		        			<li id="list">
+		        				<div class="news-title">
+		        					<a href="#">
+			        					<div class="news-market">
+			        						<div class="news-market-name">耐克专柜(恒隆广场历下店三楼)</div>
+			        						<div class="news-state">待付款</div>
+			        					</div>
+			        					<div class="news-info">
+			        						<div class="news-img">
+			        							<img src="img/state/clothes.png" />
+			        						</div>
+			        						<div class="news-text">
+			        							<h3>2018夏天新款男士短袖t恤青少年韩版修身印花圆领半袖男装衣服潮领半袖</h3>
+			        						</div>
+			        						<div class="news-price">
+			        							<span class="price-r">￥499.0</span>
+			        							<span class="price-f">￥999.0</span>
+			        							<div class="price-num">×1</div>
+			        						</div>
+			        					</div>
+		        					</a>
+		        				</div>
+		        				<div class="news-button">
+		        					<a href="#" class="button-name button-color">立即付款</a>
+		        					<a href="#" class="button-name"id="delete">取消订单</a>
+		        				</div>
+		        			</li>
+		        			<li id="list">
+		        				<div class="news-title">
+		        					<a href="#">
+			        					<div class="news-market">
+			        						<div class="news-market-name">耐克专柜(恒隆广场历下店三楼)</div>
+			        						<div class="news-state">交易成功</div>
+			        					</div>
+			        					<div class="news-info">
+			        						<div class="news-img">
+			        							<img src="img/state/clothes.png" />
+			        						</div>
+			        						<div class="news-text">
+			        							<h3>2018夏天新款男士短袖t恤青少年韩版修身印花圆领半袖男装衣服潮领半袖</h3>
+			        						</div>
+			        						<div class="news-price">
+			        							<span class="price-r">￥499.0</span>
+			        							<span class="price-f">￥999.0</span>
+			        							<div class="price-num">×1</div>
+			        						</div>
+			        					</div>
+		        					</a>
+		        				</div>
+		        				<div class="news-button">
+		        					<a href="#" class="button-name"id="delete">删除订单</a>
+		        				</div>
+		        			</li>
+		        			<li id="list">
+		        				<div class="news-title">
+		        					<a href="#">
+			        					<div class="news-market">
+			        						<div class="news-market-name">耐克专柜(恒隆广场历下店三楼)</div>
+			        						<div class="news-state">已发货</div>
+			        					</div>
+			        					<div class="news-info">
+			        						<div class="news-img">
+			        							<img src="img/state/clothes.png" />
+			        						</div>
+			        						<div class="news-text">
+			        							<h3>2018夏天新款男士短袖t恤青少年韩版修身印花圆领半袖男装衣服潮领半袖</h3>
+			        						</div>
+			        						<div class="news-price">
+			        							<span class="price-r">￥499.0</span>
+			        							<span class="price-f">￥999.0</span>
+			        							<div class="price-num">×1</div>
+			        						</div>
+			        					</div>
+		        					</a>
+		        				</div>
+		        				<div class="news-button">
+		        					<a href="#" class="button-name button-color"id="confirm">确定收货</a>
+		        					<a href="#" class="button-name">评价</a>
+		        				</div>
+		        			</li>
+		        			<li id="list">
+		        				<div class="news-title">
+		        					<a href="#">
+			        					<div class="news-market">
+			        						<div class="news-market-name">耐克专柜(恒隆广场历下店三楼)</div>
+			        						<div class="news-state">交易成功</div>
+			        					</div>
+			        					<div class="news-info">
+			        						<div class="news-img">
+			        							<img src="img/state/clothes.png" />
+			        						</div>
+			        						<div class="news-text">
+			        							<h3>2018夏天新款男士短袖t恤青少年韩版修身印花圆领半袖男装衣服潮领半袖</h3>
+			        						</div>
+			        						<div class="news-price">
+			        							<span class="price-r">￥499.0</span>
+			        							<span class="price-f">￥999.0</span>
+			        							<div class="price-num">×1</div>
+			        						</div>
+			        					</div>
+		        					</a>
+		        				</div>
+		        				<div class="news-button">
+		        					<a href="#" class="button-name"id="delete">删除订单</a>
+		        					<a href="#" class="button-name">追加评论</a>
+		        				</div>
+		        			</li>
+		       			</ul>
+		      		</div>
+      			</div>
+      			<div class="swiper-slide">
+		        	<div class="content-slide">
+		        		<ul class="news-list">
+		        			<li id="list">
+		        				<div class="news-title">
+		        					<a href="#">
+			        					<div class="news-market">
+			        						<div class="news-market-name">耐克专柜(恒隆广场历下店三楼)</div>
+			        						<div class="news-state">待付款</div>
+			        					</div>
+			        					<div class="news-info">
+			        						<div class="news-img">
+			        							<img src="img/state/clothes.png" />
+			        						</div>
+			        						<div class="news-text">
+			        							<h3>2018夏天新款男士短袖t恤青少年韩版修身印花圆领半袖男装衣服潮领半袖</h3>
+			        						</div>
+			        						<div class="news-price">
+			        							<span class="price-r">￥499.0</span>
+			        							<span class="price-f">￥999.0</span>
+			        							<div class="price-num">×1</div>
+			        						</div>
+			        					</div>
+		        					</a>
+		        				</div>
+		        				<div class="news-button">
+		        					<a href="#" class="button-name button-color">立即付款</a>
+		        					<a href="#" class="button-name"id="delete">取消订单</a>
+		        				</div>
+		        			</li>
+		       			</ul>
+		      		</div>
+      			</div>
+      			<div class="swiper-slide">
+		        	<div class="content-slide">
+		        		<ul class="news-list">
+							<li id="list">
+		        				<div class="news-title">
+		        					<a href="#">
+			        					<div class="news-market">
+			        						<div class="news-market-name">耐克专柜(恒隆广场历下店三楼)</div>
+			        						<div class="news-state">待收货</div>
+			        					</div>
+			        					<div class="news-info">
+			        						<div class="news-img">
+			        							<img src="img/state/clothes.png" />
+			        						</div>
+			        						<div class="news-text">
+			        							<h3>2018夏天新款男士短袖t恤青少年韩版修身印花圆领半袖男装衣服潮领半袖</h3>
+			        						</div>
+			        						<div class="news-price">
+			        							<span class="price-r">￥499.0</span>
+			        							<span class="price-f">￥999.0</span>
+			        							<div class="price-num">×1</div>
+			        						</div>
+			        					</div>
+		        					</a>
+		        				</div>
+		        				<div class="news-button">
+		        					<a href="#" class="button-name"id="delete">删除订单</a>
+		        					<a href="#" class="button-name">追加评价</a>
+		        				</div>
+		        			</li>
+		       			</ul>
+		      		</div>
+      			</div>
+      			<div class="swiper-slide">
+		        	<div class="content-slide">
+		        	<ul class="news-list">
+		        			<li>
+		        				<div class="news-title">
+		        					<a href="#">
+			        					<div class="news-market">
+			        						<div class="news-market-name">耐克专柜(恒隆广场历下店三楼)</div>
+			        						<div class="news-state">待收货</div>
+			        					</div>
+			        					<div class="news-info">
+			        						<div class="news-img">
+			        							<img src="img/state/clothes.png" />
+			        						</div>
+			        						<div class="news-text">
+			        							<h3>2018夏天新款男士短袖t恤青少年韩版修身印花圆领半袖男装衣服潮领半袖</h3>
+			        						</div>
+			        						<div class="news-price">
+			        							<span class="price-r">￥499.0</span>
+			        							<span class="price-f">￥999.0</span>
+			        							<div class="price-num">×1</div>
+			        						</div>
+			        					</div>
+		        					</a>
+		        				</div>
+		        				
+		        				<div class="news-button">
+		        					<a href="#" class="button-name button-color"id="confirm">确定收货</a>
+		        					<a href="#" class="button-name">去评价</a>
+		        				</div>
+		        			</li>
+		       			</ul>
+		      		</div>
+      			</div>
+      			<div class="swiper-slide">
+		        	<div class="content-slide">
+		        		<ul class="news-list">
+		        			<li id="list">
+		        				<div class="news-title">
+		        					<a href="#">
+			        					<div class="news-market">
+			        						<div class="news-market-name">耐克专柜(恒隆广场历下店三楼)</div>
+			        						<div class="news-state">交易成功</div>
+			        					</div>
+			        					<div class="news-info">
+			        						<div class="news-img">
+			        							<img src="img/state/clothes.png" />
+			        						</div>
+			        						<div class="news-text">
+			        							<h3>2018夏天新款男士短袖t恤青少年韩版修身印花圆领半袖男装衣服潮领半袖</h3>
+			        						</div>
+			        						<div class="news-price">
+			        							<span class="price-r">￥499.0</span>
+			        							<span class="price-f">￥999.0</span>
+			        							<div class="price-num">×1</div>
+			        						</div>
+			        					</div>
+		        					</a>
+		        				</div>
+		        				<div class="news-button">
+		        					<a href="#" class="button-name"id="delete">删除订单</a>
+		        				</div>
+		        			</li>
+		       			</ul>
+		      		</div>
+      			</div>
+		  	</div>
+		</div>
+		</section>
+	</body>
+</html>

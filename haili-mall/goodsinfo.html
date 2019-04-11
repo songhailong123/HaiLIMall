@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="keywords" content="" />  
+		<meta name="description" content="" />  
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />  
+		<meta name="format-detection" content="telephone=no" />  
+		<meta name="apple-mobile-web-app-capable" content="yes" />  
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">  
+		<meta name="author" content="" />  
+		<title>商品详情</title>	
+		<script type="text/javascript" src="js/jquery-2.2.3.min.js" ></script>
+		<link rel="stylesheet" href="css/index.css" />
+		<link rel="stylesheet" href="css/reset.css" />
+		<script type="text/javascript" src="js/index.js" ></script>
+		<script type="text/javascript" src="js/rem.js" ></script>
+		<script type="text/javascript" src="js/swiper.min.js" ></script>
+	</head>
+	<body>
+		<header>
+			<a href="javascrpit:;"ontouchstart="javascript:history.back(-1)"class="goods-back"><img src="img/goodsinfo/返回.png"/></a>
+			<!--滚动轮播-->
+			<div id="slider">
+				<div class="swiper-container clearfix">
+					<ul class="swiper-wrapper">
+						<li class="swiper-slide goods-reset "><a href="#"><img src="img/goodsinfo/鞋子1.png"/></a></li>
+						<li class="swiper-slide goods-reset"><a href="#"><img src="img/goodsinfo/鞋子2.png"/></a></li>
+						<li class="swiper-slide goods-reset"><a href="#"><img src="img/goodsinfo/鞋子3.png"/></a></li>
+					</ul>
+				</div>
+				<div class="swiper-pagination"></div>
+			</div>
+		</header>
+		<section>
+			<div class="goods-title">
+				<div class="goods-name">耐克Nike2017新款男鞋休闲鞋运动鞋运动休闲819685-101</div>
+				<div class="goods-price">
+					<span><strong style="color:#FF4500;">￥629.0</strong></span>
+					<span class="goods-oldprice">￥999</span>
+				</div>
+				<div class="goods-salenum">已售11件</div>
+			</div>
+			<div class="goods-active">
+				<span class="goods-send">配送:</span>
+				<span class="send-info">免费配送&nbsp;&nbsp;满500可选同款多号试穿</span>
+			</div>
+			<div class="goods_sort">
+				<a href="#">
+					<div class="goods_name">
+						<div class="goods_img">
+							<img src="img/brand/nike.png"/>
+						</div>
+						<div class="goods_list">
+							<p class="goods-list_name">
+								<strong>耐克</strong>
+							</p>
+							<span class="goods-list_address">&nbsp;恒隆广场历下店&nbsp;3F</span>
+						</div>
+					</div>						
+				</a>
+				<div class="goods-go">
+					<a href="#"><img src="img/brand/导航.png" /></a>
+				</div>
+			</div>
+			<div class="info-head">
+				<h3>商品参数</h3>
+			</div>
+			<div class="parameter">
+				<img src="img/goodsinfo/信息参数.png"/>
+			</div>
+			<div class="parameter">
+				<img src="img/goodsinfo/尺码.png" />
+			</div>
+			<div class="parameter-show">
+				<img src="img/goodsinfo/鞋子1.png" />
+			</div>
+			<div class="parameter-show">
+				<img src="img/goodsinfo/鞋子2.png" />
+			</div>
+			<div class="parameter-show">
+				<img src="img/goodsinfo/鞋子3.png" />
+			</div>
+		</section>
+		<footer class="foot goods-foot">
+			<div class="goods-car">
+				<a href="shopcar.html">
+					<img src="img/goodsinfo/20_购物车.png"/>
+					<div style="font-size: .48rem;">购物车</div>
+				</a>
+			</div>
+			<div class="goods-add" id="goods-add">加入购物车</div>
+			<script type="text/javascript">
+				$("#goods-add").on("touchstart",function(){
+					setTimeout(function(){
+						$(".goods-select").slideDown();
+						},50)
+				})
+			</script>
+			<div class="goods-add goods-buy"id="goods-buy">立即购买</div>
+				<script type="text/javascript">
+					$("#goods-buy").on("touchstart",function(){
+						setTimeout(function(){
+							$(".goods-selectbuy").slideDown();
+						},50)
+						
+					})
+				</script>
+			<div class="goods-select"id="goods-select">
+				<div class="sale_sort">
+					<a href="#">
+						<div class="sale_name">
+							<div class=" sale_img">
+								<img src="img/goodsinfo/鞋子1.png"/>
+							</div>
+							<div class="sale_list">
+								<p class="sale-list_name">
+									<strong>￥629</strong>
+								</p>
+								<p class="sale-list_address">库存6件</p>
+								<p class="sale-list_address">恒隆广场历下店&nbsp;3F</p>
+							</div>
+						</div>						
+					</a>
+					<div class="sale-close">
+						<a href="#"><img src="img/goodsinfo/关闭.png" /></a>
+					</div>
+					<script type="text/javascript">
+						$(".sale-close a").on("touchstart",function(e){
+							e.preventDefault();
+							$(".goods-select").css("display","none");
+						})
+					</script>
+				</div>
+				<div class="goods-rule"id="goods-rule">
+					<h3>规格</h3>
+					<ul>
+						<li><a href="#"class="goods-a">白色/41码</a></li>
+						<li><a href="#"class="goods-a">白色/42码</a></li>
+						<li><a href="#"class="goods-a">白色/43码</a></li>
+						<li><a href="#"class="goods-a">白色/44码</a></li>
+						<li><a href="#"class="goods-a">白色/45码</a></li>
+					</ul>
+				</div>
+				<script type="text/javascript">
+						var oId1=document.getElementById('goods-rule');
+						var oLi1=oId1.getElementsByTagName('a');
+			        	for(var i = 0;i<oLi1.length;i++) {
+			           		oLi1[i].addEventListener("touchstart",function() {
+			                for(var i=0;i<oLi1.length;i++) {
+			                    oLi1[i].setAttribute('class','goods-a');
+			                }
+			                this.setAttribute('class','goods-a li-color');
+			            	});
+			       	 	}
+				</script>
+				<div class="goods-rule goods-try"id="goods-try">
+					<h3>选择试穿规格</h3>
+					<ul>
+						<li><a href="#"class="goods-a">白色/41码</a></li>
+						<li><a href="#"class="goods-a">白色/42码</a></li>
+						<li><a href="#"class="goods-a">白色/43码</a></li>
+						<li><a href="#"class="goods-a">白色/44码</a></li>
+						<li><a href="#"class="goods-a">白色/45码</a></li>
+					</ul>
+				</div>
+				<script type="text/javascript">
+						var oId2=document.getElementById('goods-try');
+						var oLia2=oId2.getElementsByTagName('a');
+			        	for(var i = 0;i<oLia2.length;i++) {
+			           		oLia2[i].addEventListener('touchstart',function() {
+			                for(var i=0;i<oLia2.length;i++) {
+			                    oLia2[i].setAttribute('class','goods-a');
+			                }
+			                this.setAttribute('class','goods-a li-color');
+			            	});
+			       	 	}
+				</script>
+				<div class="goods-add goods-addcar"><a href="shopcar.html">加入购物车</a></div>
+			</div>
+			<div class="goods-selectbuy">
+				<div class="sale_sort">
+					<a href="#">
+						<div class="sale_name">
+							<div class=" sale_img">
+								<img src="img/goodsinfo/鞋子1.png"/>
+							</div>
+							<div class="sale_list">
+								<p class="sale-list_name">
+									<strong>￥629</strong>
+								</p>
+								<p class="sale-list_address">库存6件</p>
+								<p class="sale-list_address">恒隆广场历下店&nbsp;3F</p>
+							</div>
+						</div>						
+					</a>
+					<div class="sale-close">
+						<a href="#"><img src="img/goodsinfo/关闭.png" /></a>
+					</div>
+					<script type="text/javascript">
+						$(".sale-close a").on("touchstart",function(e){
+							e.preventDefault();
+							$(".goods-selectbuy").css("display","none");
+						})
+					</script>
+				</div>
+				<div class="goods-rule"id="goods-rule2">
+					<h3>规格</h3>
+					<ul>
+						<li><a href="#"class="goods-a">白色/41码</a></li>
+						<li><a href="#"class="goods-a">白色/42码</a></li>
+						<li><a href="#"class="goods-a">白色/43码</a></li>
+						<li><a href="#"class="goods-a">白色/44码</a></li>
+						<li><a href="#"class="goods-a">白色/45码</a></li>
+					</ul>
+				</div>
+				<script type="text/javascript">
+						var oId=document.getElementById('goods-rule2');
+						var oLi=oId.getElementsByTagName('a');
+			        	for(var i = 0;i<oLi.length;i++) {
+			           		oLi[i].addEventListener("touchstart",function() {
+			                for(var i=0;i<oLi.length;i++) {
+			                    oLi[i].setAttribute('class','goods-a');
+			                }
+			                this.setAttribute('class','goods-a li-color');
+			            	});
+			       	 	}
+				</script>
+				<div class="goods-rule goods-try"id="goods-try2">
+					<h3>选择试穿规格</h3>
+					<ul>
+						<li><a href="#"class="goods-a">白色/41码</a></li>
+						<li><a href="#"class="goods-a">白色/42码</a></li>
+						<li><a href="#"class="goods-a">白色/43码</a></li>
+						<li><a href="#"class="goods-a">白色/44码</a></li>
+						<li><a href="#"class="goods-a">白色/45码</a></li>
+					</ul>
+				</div>
+				<script type="text/javascript">
+						var oId=document.getElementById('goods-try2');
+						var oLia=oId.getElementsByTagName('a');
+			        	for(var i = 0;i<oLia.length;i++) {
+			           		oLia[i].addEventListener("touchstart",function() {
+			                for(var i=0;i<oLia.length;i++) {
+			                    oLia[i].setAttribute('class','goods-a');
+			                }
+			                this.setAttribute('class','goods-a li-color');
+			            	});
+			       	 	}
+				</script>
+				<div class="goods-add goods-addcar"><a href="payresult.html">立即购买</a></div>
+			</div>
+
+
+		</footer>
+	</body>
+</html>

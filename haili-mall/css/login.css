@@ -1,0 +1,26 @@
+body{
+	background:url(../img/login_03.jpg) no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	-webkit-text-size-adjust: 100%!important;
+}
+*{
+	margin: 0;
+	padding: 0;
+}
+/*placeholder*/
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color:    #FFFFFF;
+    font-size: 0.8rem;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+   color:    #FFFFFF;
+   font-size: 0.8rem;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+   color:    #FFFFFF;
+   font-size:0.8rem ;
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+   color:  #FFFFFF;
+   font-size: 0.8rem;

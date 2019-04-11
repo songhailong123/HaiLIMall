@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="keywords" content="" />  
+		<meta name="description" content="" />  
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />  
+		<meta name="format-detection" content="telephone=no" />  
+		<meta name="apple-mobile-web-app-capable" content="yes" />  
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">  
+		<meta name="author" content="" />  
+		<script type="text/javascript" src="js/rem.js" ></script>
+		<script type="text/javascript" src="js/jquery-2.2.3.min.js" ></script>
+		<link rel="stylesheet" href="css/index.css" />
+		<link rel="stylesheet" href="css/reset.css" />
+		<script type="text/javascript" src="js/swiper.min.js" ></script>
+		<link rel="stylesheet" href="css/swiper.min.css" />
+		<title>商场</title>
+		<script type="text/javascript">
+				$(document).ready(function(){
+					$("[id=collect]").on('touchstart',function(e){
+						e.preventDefault();
+						if($(this).attr("src")=="img/market/收藏.png"){
+							$(this).attr("src","img/market/已收藏.png");
+						}
+						else{
+							$(this).attr("src","img/market/收藏.png");
+						}
+					})
+				})
+		</script>
+	</head>
+	<body>
+		<header class="search_m">
+				<div class="search-back">
+					<a href="index.html"><img src="img/left.png"/></a>
+				</div>
+				<form action="" method="post">
+					<input type="text"placeholder="输入商场名称"name="search_m" id="search_m"/>
+					<input type="image" name="search_mbutton" id="search_mbutton" src="img/search .png" />
+				</form>			
+		</header>
+		<section>			
+		<div id="nav">
+			<a href="#" class="change_color">商场分类<img src="img/city.png"/></a>
+			<a href="#">全部店铺<img src="img/city.png"/></a>
+			<a href="#">本周热搜<img src="img/city.png"/></a>
+		</div>	
+		<div id="tabs-container" class="swiper-container">
+		   	<div class="swiper-wrapper">
+		      	<div class="swiper-slide">
+		        <div class="content-slide">
+				<ul id="content"class="content">
+					<li class="content_list">
+						<div class="content_sort">
+							<a href="brand.html">
+								<div class="content_name">
+									<div class="content_img">
+										<img src="img/market/恒隆.jpg"/>
+									</div>
+									<div class="list_text">
+										<p class="list_name">
+											<strong>恒隆广场</strong>
+										</p>
+										<p class="list_sort">综合商场</p>
+										<span class="list_address">人均:&nbsp;<span style="color: #EE4000;">499元&nbsp;</span>济南市市中区经四路5号（近人民商场）</span>
+									</div>
+								</div>						
+							</a>
+							<div class="collect">
+								<img src="img/market/收藏.png" /id="collect">
+							</div>
+						</div>
+					</li>
+					<li class="content_list">
+						<div class="content_sort">
+							<a href="brand.html">
+								<div class="content_name">
+									<div class="content_img">
+										<img src="img/market/华联.jpg"/>
+									</div>
+									<div class="list_text">
+										<p class="list_name">
+											<strong>华联广场</strong>
+										</p>
+										<p class="list_sort">综合商场</p>
+										<span class="list_address">人均:&nbsp;<span style="color: #EE4000;">499元&nbsp;</span>济南市市中区经四路5号（近人民商场）</span>
+									</div>
+								</div>						
+							</a>
+							<div class="collect" >
+								<img src="img/market/收藏.png"/id="collect">
+							</div>
+						</div>
+					</li>
+					<li class="content_list">
+						<div class="content_sort">
+							<a href="brand.html">
+								<div class="content_name">
+									<div class="content_img">
+										<img src="img/market/世茂.jpg"/>
+									</div>
+									<div class="list_text">
+										<p class="list_name">
+											<strong>世茂广场</strong>
+										</p>
+										<p class="list_sort">综合商场</p>
+										<span class="list_address">人均:&nbsp;<span style="color: #EE4000;">499元&nbsp;</span>济南市市中区经四路5号（近人民商场）</span>
+									</div>
+								</div>						
+							</a>
+							<div class="collect">
+								<img src="img/market/收藏.png"/id="collect">
+							</div>
+						</div>
+					</li>
+					<li class="content_list">
+						<div class="content_sort">
+							<a href="brand.html">
+								<div class="content_name">
+									<div class="content_img">
+										<img src="img/market/万达.jpg"/>
+									</div>
+									<div class="list_text">
+										<p class="list_name">
+											<strong>万达广场</strong>
+										</p>
+										<p class="list_sort">综合商场</p>
+										<span class="list_address">人均:&nbsp;<span style="color: #EE4000;">499元&nbsp;</span>济南市市中区经四路5号（近人民商场）</span>
+									</div>
+								</div>						
+							</a>
+							<div class="collect">
+								<img src="img/market/收藏.png"/id="collect">
+							</div>
+						</div>
+					</li>
+					<li class="content_list">
+						<div class="content_sort">
+							<a href="brand.html">
+								<div class="content_name">
+									<div class="content_img">
+										<img src="img/market/贵和.jpg"/>
+									</div>
+									<div class="list_text">
+										<p class="list_name">
+											<strong>贵和广场</strong>
+										</p>
+										<p class="list_sort">综合商场</p>
+										<span class="list_address">人均:&nbsp;<span style="color: #EE4000;">499元&nbsp;</span>济南市市中区经四路5号（近人民商场）</span>
+									</div>
+								</div>						
+							</a>
+							<div class="collect">
+								<img src="img/market/收藏.png"/id="collect">
+							</div>
+						</div>
+					</li>
+					<li class="content_list">
+						<div class="content_sort">
+							<a href="brand.html">
+								<div class="content_name">
+									<div class="content_img">
+										<img src="img/market/银座.jpg"/>
+									</div>
+									<div class="list_text">
+										<p class="list_name">
+											<strong>银座广场</strong>
+										</p>
+										<p class="list_sort">综合商场</p>
+										<span class="list_address">人均:&nbsp;<span style="color: #EE4000;">499元&nbsp;</span>济南市市中区经四路5号（近人民商场）</span>
+									</div>
+								</div>						
+							</a>
+							<div class="collect">
+								<img src="img/market/收藏.png"/id="collect">
+							</div>
+						</div>
+					</li>
+					<li class="content_list">
+						<div class="content_sort">
+							<a href="brand.html">
+								<div class="content_name">
+									<div class="content_img">
+										<img src="img/market/万达.jpg"/>
+									</div>
+									<div class="list_text">
+										<p class="list_name">
+											<strong>万达广场</strong>
+										</p>
+										<p class="list_sort">综合商场</p>
+										<span class="list_address">人均:&nbsp;<span style="color: #EE4000;">499元&nbsp;</span>济南市市中区经四路5号（近人民商场）</span>
+									</div>
+								</div>						
+							</a>
+							<div class="collect">
+								<img src="img/market/收藏.png"/id="collect">
+							</div>
+						</div>
+					</li>
+					<li class="content_list">
+						<div class="content_sort">
+							<a href="brand.html">
+								<div class="content_name">
+									<div class="content_img">
+										<img src="img/market/恒隆.jpg"/>
+									</div>
+									<div class="list_text">
+										<p class="list_name">
+											<strong>恒隆广场</strong>
+										</p>
+										<p class="list_sort">综合商场</p>
+										<span class="list_address">人均:&nbsp;<span style="color: #EE4000;">499元&nbsp;</span>济南市市中区经四路5号（近人民商场）</span>
+									</div>
+								</div>						
+							</a>
+							<div class="collect" >
+								<img src="img/market/收藏.png"/id="collect"onclick="change_pic">
+							</div>
+						</div>
+					</li>
+				</ul>
+				</div>
+			</div>
+			<div class="swiper-slide">
+		        <div class="content-slide">
+				<ul id="content"class="content">
+					<li class="content_list">
+						<div class="content_sort">
+							<a href="brand.html">
+								<div class="content_name">
+									<div class="content_img">
+										<img src="img/market/BURBERRY.png"/>
+									</div>
+									<div class="list_text">
+										<p class="list_name">
+											<strong>BURBERRY</strong>
+										</p>
+										<p class="list_sort">服装商店</p>
+										<span class="list_address">人均:&nbsp;<span style="color: #EE4000;">499元&nbsp;</span>济南市历下区泺源大街66号银座商城一层116号商铺</span>
+									</div>
+								</div>						
+							</a>
+							<div class="collect">
+								<img src="img/market/收藏.png" /id="collect">
+							</div>
+						</div>
+					</li>
+					<li class="content_list">
+						<div class="content_sort">
+							<a href="brand.html">
+								<div class="content_name">
+									<div class="content_img">
+										<img src="img/brand/nike.png"/>
+									</div>
+									<div class="list_text">
+										<p class="list_name">
+											<strong>nike</strong>
+										</p>
+										<p class="list_sort">服装专柜</p>
+										<span class="list_address">人均:&nbsp;<span style="color: #EE4000;">499元&nbsp;</span>济南市历下区济南银座F2(3楼)</span>
+									</div>
+								</div>						
+							</a>
+							<div class="collect">
+								<img src="img/market/收藏.png" /id="collect">
+							</div>
+						</div>
+					</li>
+					<li class="content_list">
+						<div class="content_sort">
+							<a href="brand.html">
+								<div class="content_name">
+									<div class="content_img">
+										<img src="img/market/GC.png"/>
+									</div>
+									<div class="list_text">
+										<p class="list_name">
+											<strong>GC服装店</strong>
+										</p>
+										<p class="list_sort">服装商店</p>
+										<span class="list_address">人均:&nbsp;<span style="color: #EE4000;">499元&nbsp;</span>振华商厦(济南店)济南市任城区经四路东首13号F4</span>
+									</div>
+								</div>						
+							</a>
+							<div class="collect">
+								<img src="img/market/收藏.png" /id="collect">
+							</div>
+						</div>
+					</li>
+					<li class="content_list">
+						<div class="content_sort">
+							<a href="brand.html">
+								<div class="content_name">
+									<div class="content_img">
+										<img src="img/brand/adidas.png"/>
+									</div>
+									<div class="list_text">
+										<p class="list_name">
+											<strong>adidas</strong>
+										</p>
+										<p class="list_sort">服装专柜</p>
+										<span class="list_address">人均:&nbsp;<span style="color: #EE4000;">499元&nbsp;</span>济南市历下区济南万达广场F2(3楼)</span>
+									</div>
+								</div>						
+							</a>
+							<div class="collect">
+								<img src="img/market/收藏.png" /id="collect">
+							</div>
+						</div>
+					</li>
+					<li class="content_list">
+						<div class="content_sort">
+							<a href="brand.html">
+								<div class="content_name">
+									<div class="content_img">
+										<img src="img/market/zara.png"/>
+									</div>
+									<div class="list_text">
+										<p class="list_name">
+											<strong>Zara服装店</strong>
+										</p>
+										<p class="list_sort">服装商店</p>
+										<span class="list_address">人均:&nbsp;<span style="color: #EE4000;">499元&nbsp;</span>济南市历下区泉城路188号济南恒隆广场F2</span>
+									</div>
+								</div>						
+							</a>
+							<div class="collect">
+								<img src="img/market/收藏.png" /id="collect">
+							</div>
+						</div>
+					</li>
+					<li class="content_list">
+						<div class="content_sort">
+							<a href="brand.html">
+								<div class="content_name">
+									<div class="content_img">
+										<img src="img/market/完美.png"/>
+									</div>
+									<div class="list_text">
+										<p class="list_name">
+											<strong>完美服装店</strong>
+										</p>
+										<p class="list_sort">服装商店</p>
+										<span class="list_address">人均:&nbsp;<span style="color: #EE4000;">499元&nbsp;</span>山东省济南市商河县玉皇路</span>
+									</div>
+								</div>						
+							</a>
+							<div class="collect">
+								<img src="img/market/收藏.png" /id="collect">
+							</div>
+						</div>
+					</li>
+					<li class="content_list">
+						<div class="content_sort">
+							<a href="brand.html">
+								<div class="content_name">
+									<div class="content_img">
+										<img src="img/market/华磊.png"/>
+									</div>
+									<div class="list_text">
+										<p class="list_name">
+											<strong>华磊服装店</strong>
+										</p>
+										<p class="list_sort">服装商店</p>
+										<span class="list_address">人均:&nbsp;<span style="color: #EE4000;">499元&nbsp;</span>山东省济南市历城区解放路11-19号</span>
+									</div>
+								</div>						
+							</a>
+							<div class="collect">
+								<img src="img/market/收藏.png" /id="collect">
+							</div>
+						</div>
+					</li>
+					<li class="content_list">
+						<div class="content_sort">
+							<a href="brand.html">
+								<div class="content_name">
+									<div class="content_img">
+										<img src="img/market/红霞.png"/>
+									</div>
+									<div class="list_text">
+										<p class="list_name">
+											<strong>红霞服装店</strong>
+										</p>
+										<p class="list_sort">服装商店</p>
+										<span class="list_address">人均:&nbsp;<span style="color: #EE4000;">499元&nbsp;</span>山东省济南市济阳县永兴街</span>
+									</div>
+								</div>						
+							</a>
+							<div class="collect">
+								<img src="img/market/收藏.png" /id="collect">
+							</div>
+						</div>
+					</li>
+					<li class="content_list">
+						<div class="content_sort">
+							<a href="brand.html">
+								<div class="content_name">
+									<div class="content_img">
+										<img src="img/brand/adidas.png"/>
+									</div>
+									<div class="list_text">
+										<p class="list_name">
+											<strong>adidas</strong>
+										</p>
+										<p class="list_sort">服装专柜</p>
+										<span class="list_address">人均:&nbsp;<span style="color: #EE4000;">499元&nbsp;</span>济南市历下区济南恒隆广场F2(3楼)</span>
+									</div>
+								</div>						
+							</a>
+							<div class="collect">
+								<img src="img/market/收藏.png" /id="collect">
+							</div>
+						</div>
+					</li>
+					<li class="content_list">
+						<div class="content_sort">
+							<a href="brand.html">
+								<div class="content_name">
+									<div class="content_img">
+										<img src="img/brand/hm.png"/>
+									</div>
+									<div class="list_text">
+										<p class="list_name">
+											<strong>HM</strong>
+										</p>
+										<p class="list_sort">服装专柜</p>
+										<span class="list_address">人均:&nbsp;<span style="color: #EE4000;">499元&nbsp;</span>济南市历下区济南恒隆广场F2(3楼)</span>
+									</div>
+								</div>						
+							</a>
+							<div class="collect">
+								<img src="img/market/收藏.png" /id="collect">
+							</div>
+						</div>
+					</li>
+					</ul>
+				</div>
+			</div>
+			<div class="swiper-slide">
+		        <div class="content-slide">
+				<ul id="content"class="content">
+					<li class="content_list">
+						<div class="content_sort">
+							<a href="brand.html">
+								<div class="content_name">
+									<div class="content_img">
+										<img src="img/market/BURBERRY.png"/>
+									</div>
+									<div class="list_text">
+										<p class="list_name">
+											<strong>BURBERRY</strong>
+										</p>
+										<p class="list_sort">服装商店</p>
+										<span class="list_address">人均:&nbsp;<span style="color: #EE4000;">499元&nbsp;</span>济南市历下区泺源大街66号银座商城一层116号商铺</span>
+									</div>
+								</div>						
+							</a>
+							<div class="collect">
+								<img src="img/market/收藏.png" /id="collect">
+							</div>
+						</div>
+					</li>
+					<li class="content_list">
+						<div class="content_sort">
+							<a href="brand.html">
+								<div class="content_name">
+									<div class="content_img">
+										<img src="img/market/GC.png"/>
+									</div>
+									<div class="list_text">
+										<p class="list_name">
+											<strong>GC服装店</strong>
+										</p>
+										<p class="list_sort">服装商店</p>
+										<span class="list_address">人均:&nbsp;<span style="color: #EE4000;">499元&nbsp;</span>振华商厦(济南店)济南市任城区经四路东首13号F4</span>
+									</div>
+								</div>						
+							</a>
+							<div class="collect">
+								<img src="img/market/收藏.png" /id="collect">
+							</div>
+						</div>
+					</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+		</section>
+				<!--底部导航栏-->
+		<!--
+			
+			
+			下拉刷新加载 更多尚未实现
+			js.....
+			
+		-->
+
+	<script type="text/javascript">
+	//选项卡切换界面功能，以及引用swipper插件
+	window.onload = function() {
+	  var tabsSwiper = new Swiper('#tabs-container',{
+	    speed:300,
+	    onSlideChangeStart: function(){
+	      $("#nav .change_color").removeClass('change_color')
+	      $("#nav a").eq(tabsSwiper.activeIndex).addClass('change_color')  
+	    }
+	  })
+	  $("#nav a").on("touchstart mousedown",function(e){
+	    e.preventDefault()
+	    $("#nav .change_color").removeClass('change_color')
+	    $(this).addClass('change_color')
+	    tabsSwiper.slideTo( $(this).index() )
+	  })
+	  $("#nav a").click(function(e){
+	    e.preventDefault()
+	  })
+	}
+	</script>
+	</body>
+</html>

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="keywords" content="" />  
+		<meta name="description" content="" />  
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />  
+		<meta name="format-detection" content="telephone=no" />  
+		<meta name="apple-mobile-web-app-capable" content="yes" />  
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">  
+		<meta name="author" content=""/>  
+		<title>搜索结果</title>
+		<link rel="stylesheet" href="css/index.css" />
+		<link rel="stylesheet" href="css/reset.css" />
+		<script type="text/javascript" src="js/rem.js" ></script>
+	</head>
+	<body>
+		<header class="s-search brand">
+			<div class="search_m store_m">
+				<div class="search-back">
+					<a href="javascript:;"ontouchstart="javascript:history.back(-1)"><img src="img/left.png"/></a>
+				</div>
+				<form action="" method="post">
+					<input type="text"placeholder="输入商品名称"name="search_m" id="search_m"/>
+					<input type="image" name="search_mbutton" id="search_mbutton" src="img/search .png" />
+				</form>
+				<div class="search-back">
+					<a href="index.html"><img src="img/主页.png"/></a>
+				</div>
+			</div>
+		</div>
+		<div id="nav">
+			<a href="#" class="change_color">全部商品<img src="img/city.png"/></a>
+			<a href="#">销量<img src="img/city.png"/></a>
+			<a href="#">价格<img src="img/city.png"/></a>
+		</div>
+		<script>
+			
+			/*商场导航部分文字颜色*/
+			var oId=document.getElementById('nav');
+			var oLi=oId.getElementsByTagName('a');
+        	for(var i = 0;i<oLi.length;i++) {
+           		oLi[i].addEventListener('touchstart',function() {
+                for(var i=0;i<oLi.length;i++) {
+                    oLi[i].removeAttribute('class');
+                }
+                this.setAttribute('class','change_color')
+            	});
+       	 }
+		</script>
+		</header>
+		<section>
+		<div class="search_contain">	
+			<ul class="news-list">
+		        		<li class="store-li">
+		        			<div class="store-sale">
+		        				<div class="store-list">
+		        					<a href="goodsinfo.html">
+		        						<img src="img/goodsinfo/鞋子1.png"/>
+		        					</a>
+		        				</div>
+		        				<div class="store-listtitle">
+		        					<div class="store-listname"><a href="goodsinfo.html"><h3>耐克Nike2017新款男鞋休闲鞋运动鞋运动休闲819685-101</h3></a></div>
+		        					<div class="store-price"><span style="color: #f50;"><strong >￥629&nbsp;</strong></span><del style="font-size: .65rem;"><span>￥999</span></del></div>
+		        					<div class="store-active">满500包邮&nbsp;多号试穿</div>
+		        					<div class="had-sale">已售99件</div>
+		        					<div class="search-addr">恒隆广场阿迪专柜</div>
+		        				</div>
+		        			</div>
+		        		</li>
+		        		<li class="store-li">
+		        			<div class="store-sale">
+		        				<div class="store-list">
+		        					<a href="goodsinfo.html">
+		        						<img src="img/goodsinfo/鞋子1.png"/>
+		        					</a>
+		        				</div>
+		        				<div class="store-listtitle">
+		        					<div class="store-listname"><a href="goodsinfo.html"><h3>耐克Nike2017新款男鞋休闲鞋运动鞋运动休闲819685-101</h3></a></div>
+		        					<div class="store-price"><span style="color: #f50;"><strong >￥629&nbsp;</strong></span><del style="font-size: .65rem;"><span>￥999</span></del></div>
+		        					<div class="store-active">满500包邮&nbsp;多号试穿</div>
+		        					<div class="had-sale">已售99件</div>
+		        					<div class="search-addr">银座阿迪专柜</div>
+		        				</div>
+		        			</div>
+		        		</li>
+		        		<li class="store-li">
+		        			<div class="store-sale">
+		        				<div class="store-list">
+		        					<a href="goodsinfo.html">
+		        						<img src="img/goodsinfo/鞋子1.png"/>
+		        					</a>
+		        				</div>
+		        				<div class="store-listtitle">
+		        					<div class="store-listname"><a href="goodsinfo.html"><h3>耐克Nike2017新款男鞋休闲鞋运动鞋运动休闲819685-101</h3></a></div>
+		        					<div class="store-price"><span style="color: #f50;"><strong >￥629&nbsp;</strong></span><del style="font-size: .65rem;"><span>￥999</span></del></div>
+		        					<div class="store-active">满500包邮&nbsp;多号试穿</div>
+		        					<div class="had-sale">已售99件</div>
+		        					<div class="search-addr">环宇城阿迪专柜</div>
+		        				</div>
+		        			</div>
+		        		</li>
+		        		<li class="store-li">
+		        			<div class="store-sale">
+		        				<div class="store-list">
+		        					<a href="goodsinfo.html">
+		        						<img src="img/goodsinfo/鞋子1.png"/>
+		        					</a>
+		        				</div>
+		        				<div class="store-listtitle">
+		        					<div class="store-listname"><a href="goodsinfo.html"><h3>耐克Nike2017新款男鞋休闲鞋运动鞋运动休闲819685-101</h3></a></div>
+		        					<div class="store-price"><span style="color: #f50;"><strong >￥629&nbsp;</strong></span><del style="font-size: .65rem;"><span>￥999</span></del></div>
+		        					<div class="store-active">满500包邮&nbsp;多号试穿</div>
+		        					<div class="had-sale">已售99件</div>
+		        					<div class="search-addr">万达广场(历下店)阿迪专柜</div>
+		        				</div>
+		        			</div>
+		        		</li>
+		        		<li class="store-li">
+		        			<div class="store-sale">
+		        				<div class="store-list">
+		        					<a href="goodsinfo.html">
+		        						<img src="img/goodsinfo/鞋子1.png"/>
+		        					</a>
+		        				</div>
+		        				<div class="store-listtitle">
+		        					<div class="store-listname"><a href="goodsinfo.html"><h3>耐克Nike2017新款男鞋休闲鞋运动鞋运动休闲819685-101</h3></a></div>
+		        					<div class="store-price"><span style="color: #f50;"><strong >￥629&nbsp;</strong></span><del style="font-size: .65rem;"><span>￥999</span></del></div>
+		        					<div class="store-active">满500包邮&nbsp;多号试穿</div>
+		        					<div class="had-sale">已售99件</div>
+		        					<div class="search-addr">恒隆广场阿迪专柜</div>
+		        				</div>
+		        			</div>
+		        		</li>
+		        		<li class="store-li">
+		        			<div class="store-sale">
+		        				<div class="store-list">
+		        					<a href="goodsinfo.html">
+		        						<img src="img/goodsinfo/鞋子1.png"/>
+		        					</a>
+		        				</div>
+		        				<div class="store-listtitle">
+		        					<div class="store-listname"><a href="goodsinfo.html"><h3>耐克Nike2017新款男鞋休闲鞋运动鞋运动休闲819685-101</h3></a></div>
+		        					<div class="store-price"><span style="color: #f50;"><strong >￥629&nbsp;</strong></span><del style="font-size: .65rem;"><span>￥999</span></del></div>
+		        					<div class="store-active">满500包邮&nbsp;多号试穿</div>
+		        					<div class="had-sale">已售99件</div>
+		        					<div class="search-addr">万达广场(高新店)阿迪专柜</div>
+		        				</div>
+		        			</div>
+		        		</li>
+		        		<li class="store-li">
+		        			<div class="store-sale">
+		        				<div class="store-list">
+		        					<a href="goodsinfo.html">
+		        						<img src="img/goodsinfo/鞋子1.png"/>
+		        					</a>
+		        				</div>
+		        				<div class="store-listtitle">
+		        					<div class="store-listname"><a href="goodsinfo.html"><h3>耐克Nike2017新款男鞋休闲鞋运动鞋运动休闲819685-101</h3></a></div>
+		        					<div class="store-price"><span style="color: #f50;"><strong >￥629&nbsp;</strong></span><del style="font-size: .65rem;"><span>￥999</span></del></div>
+		        					<div class="store-active">满500包邮&nbsp;多号试穿</div>
+		        					<div class="had-sale">已售99件</div>
+		        					<div class="search-addr">华联商厦阿迪专柜</div>
+		        				</div>
+		        			</div>
+		        		</li>
+		        		</ul>
+		        	</div>
+		</section>
+	</body>
+</html>
